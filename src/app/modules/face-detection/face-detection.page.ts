@@ -58,6 +58,8 @@ export class FaceDetectionPage implements OnInit {
     if (!path) {
       return;
     }
+    const teste = new Date().getSeconds();
+    alert('Segundos 1' + teste);
 
     const performanceMode = this.formGroup.get('performanceMode')?.value;
 
@@ -83,6 +85,9 @@ export class FaceDetectionPage implements OnInit {
       enableTracking: enableTracking,
     });
     this.faces = faces;
+    const teste2 = new Date().getSeconds();
+    alert('Segundos 2' + teste2);
+    alert(teste2 - teste);
   }
 
   public getLandmarkType(type: LandmarkType) {

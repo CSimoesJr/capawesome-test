@@ -96,7 +96,9 @@
           <ion-label position="fixed">Face Tracking</ion-label>
           <ion-checkbox formControlName="enableTracking"></ion-checkbox>
         </ion-item>
-        <ion-button (click)="processImage()">Process Image</ion-button>
+        <div class="po-p-2">
+          <po-button p-kind="primary" p-label="Process Image" (p-click)="processImage()"></po-button>
+        </div>
       </form>
     </ion-card-content>
   </ion-card>
